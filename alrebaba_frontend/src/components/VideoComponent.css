@@ -1,0 +1,25 @@
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2vh;
+}
+
+.participant-data {
+  position: absolute;
+  bottom: 1vh;
+  left: 1vh;
+  font-size: 2vh;
+}
+
+.participant-data p {
+  background: rgba(0, 0, 0, 0.7); /* 검정색 배경에 70% 투명도 */
+  margin: 0;
+  padding: 3px 5px;
+  color: white; /* 폰트 색상 흰색 */
+  font-weight: bold;
+  border-radius: 1vh;
+}

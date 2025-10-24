@@ -1,0 +1,65 @@
+.title-bar-container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.title-bar-container .name {
+  font-size: 16px;
+  color: #101010;
+  font-weight: bold;
+  white-space: nowrap; /* 줄바꿈 방지 */
+  overflow: hidden;
+}
+
+.title-bar-container .title-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+}
+
+.title-bar-container .icon {
+  color: #101010;
+  font-weight: 700;
+}
+
+.title-friend-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.title-friend-menu > p {
+  font-size: 12px;
+}
+
+.title-friend-menu span p {
+  color: #73757c;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+}
+
+.title-friend-menu span {
+  padding: 0 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.title-friend-menu span:hover {
+  border-radius: 5px;
+  background: #e3e5e8;
+}
+
+.title-friend-menu span p {
+  cursor: pointer;
+  justify-content: center;
+}

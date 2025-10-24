@@ -1,0 +1,136 @@
+.friend {
+  width: 100%;
+  height: calc(100vh - 154px);
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 0;
+  overflow: hidden; /* 내부 요소가 넘칠 경우 스크롤이 friend-list에 적용되도록 설정 */
+}
+
+.friend-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+  padding-right: 0px; /* 스크롤바와 내용 간격 확보 */
+}
+
+.friend-list-infos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.friend-list-infos img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.friend-list-detail {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  padding: 5px 0px;
+}
+
+.friend-list-detail .user-image-container {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  position: relative;
+}
+
+.friend-list-detail-status {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: -10%;
+  width: 40%;
+  height: 40%;
+}
+
+.friend-list-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.friend-name {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.friend-status {
+  color: #828282;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.friend-list-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icons-border {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.icons-accept {
+  border: 3px solid #5ac934;
+  cursor: pointer;
+}
+
+.icons-block {
+  border: 3px solid #b5b7ba;
+  cursor: pointer;
+}
+
+.icons-cancel {
+  border: 3px solid #da3f3f;
+  cursor: pointer;
+}
+
+.icons-line {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.no-friends {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  color: #777;
+}
+
+.loading-message {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

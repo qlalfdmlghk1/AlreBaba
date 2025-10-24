@@ -1,0 +1,24 @@
+function IconSend({ color }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none">
+      <g clipPath="url(#clip0_241_1197)">
+        <path
+          d="M0.0095238 20L20 10L0.0095238 0L0 7.77778L14.2857 10L0 12.2222L0.0095238 20Z"
+          fill={color}
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_241_1197">
+          <rect width="20" height="20" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
+
+export default IconSend;

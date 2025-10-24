@@ -1,0 +1,138 @@
+.coding-test-main {
+  width: 100%;
+  height: calc(100vh - 154px);
+  background: #fff;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.coding-test-main .right {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.ct-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ct-info-lang-mode {
+  display: flex;
+  gap: 10px;
+}
+
+.ct-info-lang-mode select {
+  border-radius: 10px;
+  background: #f1f3f9;
+  border: none;
+}
+
+.ct-info button {
+  background: #f1f3f9;
+  border: none;
+  width: 51px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar-container {
+  width: 37%;
+}
+
+.coding-test-editor {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 3%;
+}
+
+.editor-wrapper {
+  border: 1px solid #000;
+}
+
+.console-container {
+  height: 100%;
+  flex: 4;
+  background: #f1f3f9;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.console-container h2 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.console-container .console {
+  height: 98%;
+  background: #fff;
+  color: #6f6f6f;
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.console-container .console ul {
+  list-style: none;
+}
+
+.console-container .console .error {
+  color: red;
+}
+
+/* 실행하기 & 저장하기 버튼 */
+.ct-button-actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  border: none;
+}
+
+.ct-button-actions > .execute {
+  border-radius: 20px;
+  border: 1px solid #ff5a5f;
+  background: #fff;
+  cursor: pointer;
+  color: #ff5a5f;
+  width: 130px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.ct-button-actions > .save {
+  border-radius: 20px;
+  background: #ff5a5f;
+  cursor: pointer;
+  border: #ff5a5f;
+  color: #fff;
+  width: 130px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.coding-test-editor * {
+  max-height: unset;
+}

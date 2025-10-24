@@ -1,0 +1,7 @@
+.live-code-container {
+  height: calc(100vh - 154px);
+}
+
+.live-code-container * {
+  max-height: unset;
+}

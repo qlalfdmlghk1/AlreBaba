@@ -1,0 +1,54 @@
+.study-home {
+  /* flex-grow: 1; */
+  height: calc(100vh - 154px);
+  /* height: 100%; */
+  /* display: flex;
+  flex-direction: column; */
+  /* height: 735px; */
+}
+
+.study-home * {
+  max-height: unset;
+}
+
+.markdownDiv {
+  flex: 1; /* 남은 공간을 모두 차지 */
+  width: 100%;
+  height: 100%; /* 최대 높이 지정 */
+  overflow-y: hidden; /* 세로 스크롤 활성화 */
+  padding: 0; /* 내부 여백 */
+  background-color: #f9f9f9; /* 배경색 */
+  box-sizing: border-box;
+}
+
+.markdownContent {
+  flex-grow: 1; /* 남은 공간을 모두 차지 */
+  padding: 20px 20px 0px 20px;
+  height: 100%;
+  /* min-height: 100%; 부모 컨테이너 높이에 맞춤 */
+  min-height: auto;
+  overflow-y: scroll;
+
+  word-wrap: break-word; /*긴 단어 줄바꿈 */
+  /* white-space: pre-wrap;  개행 문자 유지하면서 줄바꿈 */
+  overflow-wrap: break-word; /*긴 단어도 줄바꿈 적용 */
+  word-break: break-word; /* break-all 대신 break-word 사용 */
+  display: block; /* 인라인 요소가 아닌 블록 요소로 표시하여 줄바꿈 적용 */
+  max-width: 100%; /* 부모 요소 너비를 초과하지 않도록 설정 */
+}
+
+.anchor {
+  display: none;
+}
+
+.markarea {
+  flex-grow: 1; /* 남은 공간을 모두 차지 */
+  border: none !important;
+  width: 100%;
+  max-height: 100%; /* 부모 높이 초과 시 스크롤 */
+  overflow-y: hidden;
+}
+
+.w-md-editor-bar {
+  display: none !important; /* 툴바 숨기기 */
+}

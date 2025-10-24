@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: io.livekit:livekit-server:0.8.3" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.livekit" artifactId="livekit-server" version="0.8.3" baseVersion="0.8.3" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../t1/alrebaba_backend/caches/modules-2/files-2.1/io.livekit/livekit-server/0.8.3/8102cebf5e75f898b22832ebcc36f66c4f3fe01c/livekit-server-0.8.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

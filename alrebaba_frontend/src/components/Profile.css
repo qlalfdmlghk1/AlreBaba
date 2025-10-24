@@ -1,0 +1,346 @@
+.profile-container {
+  width: 100%;
+  background-color: white;
+  height: calc(100vh - 154px);
+  padding: 0;
+  margin: 0 auto;
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+}
+
+/* --- 프로필 헤더 --- */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px 40px;
+  gap: 50px;
+  margin: 20px 0px;
+}
+
+.profile-header-info {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* 요소 간 일정한 간격 유지 */
+  align-items: stretch; /* 모든 요소가 동일한 너비를 가지도록 설정 */
+}
+
+.profile-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-image-delete-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.profile-image-edit-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* .profile-image-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  position: relative; 
+}
+
+.profile-image-edit-icon {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.remove-profile-icon {
+  background: rgba(0, 0, 0, 0.6);
+}
+*/
+
+.profile-nickname-username {
+  font-size: 20px;
+  padding-top: 80px;
+  font-weight: bold;
+}
+
+.nickname-input {
+  font-size: 20px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.nickname-error-message {
+  color: red;
+  font-size: 12px;
+  min-height: 14px; /* 오류 메시지 공간 유지 */
+  margin-top: 5px;
+  visibility: hidden; /* 기본적으로 숨김 */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nickname-error-message.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nickname-error-message.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.nickname-edit-profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.edit-profile-btn,
+.cancel-profile-btn {
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-profile-btn {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.cancel-profile-btn {
+  background-color: #cccccc;
+  color: black;
+}
+
+.cancel-profile-btn:hover {
+  background-color: #aaaaaa;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: gray;
+  gap: 10px;
+}
+
+/* --- 관심 도메인 및 사용 언어 --- */
+.interests-languages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+  width: 100%;
+  gap: 10px;
+}
+
+.interests,
+.languages {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.interest,
+.language {
+  width: auto;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 5px 4px;
+  gap: 5px;
+}
+
+.interests span,
+.languages span {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.interest p,
+.language p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #979797;
+  margin: 0px;
+}
+
+.profile-details-title {
+  font-size: 20px;
+  padding-left: 50px;
+  font-weight: bold;
+}
+
+.clickable-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.clickable-icon:hover {
+  transform: scale(1.1);
+}
+
+.clickable-icon:active {
+  transform: scale(0.95);
+}
+/* 프로필 상세정보 */
+.profile-details {
+  height: 40%;
+  background-color: #d9d9d9;
+  margin: 10px 20px;
+  padding: 10px 40px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* 요소 간 일정한 간격 유지 */
+  align-items: stretch; /* 모든 요소가 동일한 너비를 가지도록 설정 */
+}
+
+.profile-item {
+  flex-grow: 1; /* 각 요소가 동일한 높이를 가지도록 설정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 요소 내부 정렬 */
+  text-align: left;
+  font-size: 2vh;
+}
+
+.profile-item > h2 {
+  font-size: 25px;
+}
+
+.profile-item > p {
+  font-size: 18px;
+}
+
+.edit-btn {
+  font-size: 14px;
+  background-color: #777;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-btn span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.edit-btn:hover {
+  background-color: #c0c0c0;
+}
+
+/* --- 반응형 디자인 적용 --- */
+@media (max-width: 768px) {
+  .profile-container {
+    overflow-y: auto; /* 세로 스크롤 활성화 */
+    /* height: 100vh;  화면 높이만큼 차지하도록 설정 */
+  }
+
+  .profile-header {
+    padding-top: 20px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-header-info {
+    text-align: center;
+  }
+
+  .nickname-edit-profile-btn {
+    justify-content: center;
+    /* display: none; */
+  }
+
+  .profile-nickname-username {
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+  }
+
+  .interests-languages {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile-details {
+    padding: 15px;
+  }
+
+  .profile-item {
+    font-size: 5px;
+  }
+
+  .profile-item p {
+    font-size: 10px;
+  }
+
+  .profile-value {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  /* .edit-btn {
+    width: 100%;
+  } */
+
+  .profile-details {
+    display: none;
+  }
+
+  .profile-details-title {
+    display: none;
+  }
+}

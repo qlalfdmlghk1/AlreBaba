@@ -1,0 +1,8 @@
+.channel-page-loading-container {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 154px);
+  color: #979797;
+}

@@ -1,0 +1,26 @@
+.progress-bar {
+  display: flex;
+  width: 100% !important;
+  flex-direction: column;
+}
+
+.progress-bar p {
+  color: #6f6f6f;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+progress {
+  width: 100%;
+  background: rgba(255, 90, 95, 0.2);
+}
+
+progress::-webkit-progress-bar {
+  background-color: rgba(255, 90, 95, 0.5);
+}
+
+progress::-webkit-progress-value {
+  background-color: #ff5a5f;
+}

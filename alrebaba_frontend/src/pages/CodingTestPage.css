@@ -1,0 +1,35 @@
+.layout-container .left.ct {
+  min-width: 55px !important;
+  width: 55px !important;
+}
+
+.layout-container .ct-nav-container {
+  display: flex;
+  height: calc(100vh - 154px);
+}
+
+.layout-container .ct-nav-container .ct-nav {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layout-container .ct-nav-container .problem-container {
+  flex: 4;
+}
+
+@media (max-width: 768px) {
+  .ct-nav-container .ct-nav {
+    display: none;
+  }
+
+  .ct-nav-container .ct-nav .problem-list-container {
+    display: none;
+  }
+
+  .layout-container .ct-nav-container .problem-container {
+    flex: 100;
+  }
+}

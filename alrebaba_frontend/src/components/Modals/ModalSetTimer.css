@@ -1,0 +1,113 @@
+.modal-set-timer {
+  width: 42%;
+  min-width: 500px;
+  min-height: 60%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  gap: 30px;
+  overflow: hidden;
+  border: none;
+  margin: auto;
+}
+
+.modal-set-timer::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.timer-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.timer-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.timer-input label {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+.timer-input input {
+  width: 130px;
+  height: 130px;
+  background: #d9d9d9;
+  font-size: 20px;
+  border: #ff5a5f 2px solid;
+  text-align: center;
+  /* border: #ff5a5f 1px solid; */
+
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.timer-input input:focus {
+  border: #ff5a5f 2px solid;
+  outline: none;
+}
+
+.timer-input input::placeholder {
+  color: rgb(205, 207, 206);
+}
+
+.modal-timer-btn-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-timer-btn-actions .next-btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #ffb3b6;
+  color: #fff;
+  background: #ffb3b6;
+  cursor: not-allowed;
+}
+
+.modal-timer-btn-actions .next-btn.active {
+  border: 1px solid #ff5a5f;
+  color: #fff;
+  background: #ff5a5f;
+  cursor: pointer;
+}
+
+.modal-timer-btn-actions .cancel {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #ff5a5f;
+  color: #ff5a5f;
+  background: #fff;
+  cursor: pointer;
+}
+
+.modal-set-timer .colon {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+/* 타이머 에러 메세지 */
+.timer-error-msg {
+  color: #ff5a5f;
+}
+
+.modal-set-timer .colon {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 75px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+}

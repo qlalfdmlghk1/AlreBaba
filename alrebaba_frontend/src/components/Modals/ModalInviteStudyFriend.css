@@ -1,0 +1,73 @@
+.modal > span {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: #6f6f6f;
+  margin: 2px;
+  font-weight: bold;
+}
+
+.search-input {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 30px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.friend-invite-list {
+  background-color: white;
+  width: 90%;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.friend-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.friend-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.invite-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-button {
+  width: 104px;
+  height: 36px;
+  background: #6f6f6f;
+  color: white;
+  margin: 2px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}

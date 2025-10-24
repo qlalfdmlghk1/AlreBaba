@@ -1,0 +1,133 @@
+.friend-status-bar-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding: 10px; */
+  align-self: stretch;
+  background-color: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.friend-status-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #f2f3f5;
+}
+
+.friend-status-header p {
+  padding: 0px 0px 0px 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* 검색 관련 */
+.search {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 25px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: #f2f3f5;
+  margin-bottom: 10px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  width: 89%;
+  height: 15px;
+  font-size: 12px;
+  background-color: transparent;
+}
+
+.search button {
+  border: none;
+  background-color: transparent;
+}
+
+/* 친구 목록 */
+.friend-status-list {
+  box-sizing: border-box;
+  padding: 15px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.friend-status-list ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.friend-status-list li {
+  width: 100%;
+  list-style: none;
+  display: flex;
+}
+
+.friend-status-list > p {
+  color: #060607;
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.5;
+  margin: 10px 0;
+}
+
+.friend-list-item {
+  display: flex;
+  gap: 10px;
+}
+
+.friend-profile {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+}
+
+.friend-list-item img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.friend-profile > .user-status {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: -10%;
+  width: 40%;
+  height: 40%;
+}
+
+.friend-list-item > .friend-info h4 {
+  color: #060607;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.friend-list-item > .friend-info p {
+  color: #060607;
+  font-size: 10px;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+.friend-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

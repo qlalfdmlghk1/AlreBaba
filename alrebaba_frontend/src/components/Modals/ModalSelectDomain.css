@@ -1,0 +1,93 @@
+.header {
+  color: #6f6f6f;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.explane {
+  margin-top: 5px;
+  color: #ff5a5f;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.domains {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.domain {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #6f6f6f;
+  font-weight: 600;
+  gap: 2px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border: #000 solid 3px;
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.domain.selected .icon {
+  background-color: #d0f0c0;
+  border-color: #8bc34a;
+}
+
+.button-container {
+  display: flex;
+  margin-top: 25px;
+  width: 310px;
+  justify-content: space-between;
+  /* gap: 20px; */
+}
+
+.cancel {
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #8c8c8c;
+  cursor: pointer;
+}
+
+.create {
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff5a5f;
+  cursor: pointer;
+}
+
+.cancel:hover {
+  background-color: #6f6f6f;
+}
+
+.create:hover {
+  background-color: #e04e52;
+}
+
+.cancel:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+}
+
+.create:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+}

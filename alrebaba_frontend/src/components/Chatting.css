@@ -1,0 +1,193 @@
+.chatting-room {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 154px);
+  padding: 10px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/* 안내 문구 */
+.chatting-room-info {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.chatting-room-info .icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 200%;
+}
+.chatting-room-info h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.chatting-room-info p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* 스크롤 영역 */
+.chatting-room-scroll {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 메시지 컨테이너 */
+.chatting-room-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 날짜 구분선 */
+.chat-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.chat-date::before,
+.chat-date::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+/* 개별 메시지 */
+.chat-message {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.chat-user-info {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.chat-user-status {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+.chat-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.chat-message-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-grow: 1; */
+}
+
+/* 메시지 헤더 */
+.chat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.chat-name {
+  color: #101010;
+  font-size: 12px;
+  font-weight: 700;
+}
+.chat-time {
+  color: #101010;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+.chat-text {
+  color: #101010;
+  font-size: 14px;
+  opacity: 50%;
+  font-weight: 500;
+}
+
+/* ... 메뉴 (삭제 메뉴) */
+.chat-menu-container {
+  position: relative;
+  /* margin-left: auto; */
+}
+.chat-menu-trigger {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #999;
+  font-size: 16px;
+}
+.chat-menu {
+  position: absolute;
+  top: 50%; /* 트리거 버튼의 세로 중앙쯤 */
+  left: 110%; /* 버튼의 오른쪽 바깥으로 메뉴 배치 */
+  transform: translateY(-50%); /* 수직 중앙 맞춤 */
+
+  background: #222;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+  min-width: 120px;
+  white-space: nowrap;
+  z-index: 9999;
+}
+
+.chat-menu-item {
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.chat-menu-item:hover {
+  background: #444;
+}
+
+/* 메시지 입력창 */
+.chatting-input-container {
+  flex-shrink: 0;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #f2f3f5;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.chatting-input-container input {
+  flex: 1;
+  border: none;
+  background: transparent;
+}
+.chatting-input-container input:focus {
+  outline: none;
+}
+.chatting-input-container > .icons {
+  cursor: pointer;
+}
+
+.char-count {
+  font-size: 12px;
+  color: gray;
+  margin-left: 10px;
+}

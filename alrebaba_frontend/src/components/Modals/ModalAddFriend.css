@@ -1,0 +1,122 @@
+.modal > span {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: #6f6f6f;
+  margin: 2px;
+  font-weight: bold;
+}
+
+.search-input {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 30px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.ban-alert {
+  color: #ff5a5f;
+  font-size: 10px;
+}
+
+.add-friend-list {
+  background-color: white;
+  width: 90%;
+  max-height: 400px;
+  padding: 0px 10px;
+  margin: 10px 0px;
+  overflow-y: auto;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.add-friend-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.friend-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.close-button {
+  width: 104px;
+  height: 36px;
+  background: #6f6f6f;
+  color: white;
+  margin: 2px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.friend-request {
+  width: 20%;
+  height: 100%;
+  background-color: #ff5a5f;
+  color: white;
+  border: 1px #ffffff solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 친구 상태 ("FOLLOWING") - 초록색 */
+.friend-following {
+  width: 20%;
+  height: 100%;
+  background-color: #28a745; /* 초록색 */
+  color: white;
+  border-radius: 5px;
+  cursor: default;
+}
+
+/* 요청 상태 ("REQUESTED") - 회색 */
+.friend-requested {
+  width: 20%;
+  height: 100%;
+  background-color: #a0a0a0; /* 회색 */
+  color: white;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+.friend-loading-message {
+  text-align: center;
+  color: #6f6f6f; /* 회색 톤 */
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.no-results {
+  text-align: center;
+  color: #6f6f6f; /* 회색 톤 */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #f8f9fa; /* 연한 회색 배경 */
+  border-radius: 10px;
+}
