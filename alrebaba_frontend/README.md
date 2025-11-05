@@ -14,7 +14,7 @@
 
 [![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.0.5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![TypeScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://www.javascript.com/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://www.javascript.com/)
 
 </div>
 
@@ -22,52 +22,33 @@
 
 ## ✨ 주요 기능
 
-<table>
-<tr>
-<td width="50%">
-
 ### 👥 친구 관리
 - 🔍 닉네임 검색으로 친구 추가
 - ✅ 친구 요청 수락/차단
 - 🟢 실시간 온라인 상태 표시
 - 🗂️ 친구 목록 필터링
 
-</td>
-<td width="50%">
-
-### 📚 스터디방 생성
-- 📝 Markdown 기반 소개 페이지
-- 💬 실시간 텍스트 채팅
-- 🎥 화상 회의
-- 💻 라이브 코드 리뷰
-- ✍️ 모의 코딩 테스트
-
-</td>
-</tr>
-<tr>
-<td width="50%">
+### 📚 스터디방 생성 및 관리
+- 📝 Markdown 기반 스터디 소개 페이지 편집
+- 💬 **CHAT**: 실시간 텍스트 채팅
+- 🎥 **MEETING**: 화상 회의
+- 💻 **CODE**: 라이브 코드 리뷰
+- ✍️ **TEST**: 모의 코딩 테스트
 
 ### 🎥 화상 회의
-- 🌐 LiveKit 기반 WebRTC
+- 🌐 LiveKit 기반 WebRTC 실시간 화상 회의
 - 👨‍👩‍👧‍👦 다자간 음성/영상 통화
 - 🖥️ 화면 공유
 - 🎛️ 마이크/스피커 제어
 - 🖼️ 전체 화면 모드
 
-</td>
-<td width="50%">
-
 ### 💻 모의 코딩 테스트
-- 🔤 10+ 프로그래밍 언어 지원
-- ⚡ Monaco Editor 기반
-- ▶️ 실시간 코드 실행
+- 🔤 10+ 프로그래밍 언어 지원 (JavaScript, Python, Java, C++, C#, PHP, Ruby, Rust 등)
+- ⚡ Monaco Editor 기반 코드 에디터
+- ▶️ 실시간 코드 실행 및 테스트
 - ⏱️ 타이머 기능
-- 🌓 다크/라이트 모드
-
-</td>
-</tr>
-<tr>
-<td colspan="2">
+- 🌓 다크/라이트 모드 전환
+- 🔄 CRDT 기반 실시간 협업 코드 편집
 
 ### 👤 마이페이지
 - 🖼️ 프로필 이미지 업로드 (최대 1MB)
@@ -76,42 +57,35 @@
 - 💡 프로그래밍 언어 선택 (20+ 언어)
 - 💬 사용자 상태 메시지 설정
 
-</td>
-</tr>
-</table>
-
 ---
 
 ## 🛠️ 기술 스택
 
-<table>
-<tr>
-<td align="center" width="25%">
-<h3>Frontend</h3>
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" /><br/>
-<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" /><br/>
-<img src="https://img.shields.io/badge/React_Router-CA4245?style=flat-square&logo=react-router&logoColor=white" />
-</td>
-<td align="center" width="25%">
-<h3>Real-time</h3>
-<img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white" /><br/>
-<img src="https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socket.io&logoColor=white" /><br/>
-<img src="https://img.shields.io/badge/LiveKit-00ADD8?style=flat-square&logo=livekit&logoColor=white" />
-</td>
-<td align="center" width="25%">
-<h3>Code Editor</h3>
-<img src="https://img.shields.io/badge/Monaco_Editor-0078D4?style=flat-square&logo=visual-studio-code&logoColor=white" /><br/>
-<img src="https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white" /><br/>
-<img src="https://img.shields.io/badge/CRDT-FF6B6B?style=flat-square" />
-</td>
-<td align="center" width="25%">
-<h3>Utilities</h3>
-<img src="https://img.shields.io/badge/Axios-5A29E4?style=flat-square&logo=axios&logoColor=white" /><br/>
-<img src="https://img.shields.io/badge/Lodash-3492FF?style=flat-square&logo=lodash&logoColor=white" /><br/>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-</td>
-</tr>
-</table>
+<div align="center">
+
+### Frontend
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat-square&logo=react-router&logoColor=white)
+
+### Real-time Communication
+![WebRTC](https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socket.io&logoColor=white)
+![LiveKit](https://img.shields.io/badge/LiveKit-00ADD8?style=flat-square&logo=livekit&logoColor=white)
+![STOMP](https://img.shields.io/badge/STOMP-000000?style=flat-square)
+![SSE](https://img.shields.io/badge/SSE-FF6B6B?style=flat-square)
+
+### Code Editor & Collaboration
+![Monaco Editor](https://img.shields.io/badge/Monaco_Editor-0078D4?style=flat-square&logo=visual-studio-code&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat-square&logo=markdown&logoColor=white)
+![CRDT](https://img.shields.io/badge/CRDT-FF6B6B?style=flat-square)
+
+### Utilities
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat-square&logo=axios&logoColor=white)
+![Lodash](https://img.shields.io/badge/Lodash-3492FF?style=flat-square&logo=lodash&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
+</div>
 
 ---
 
@@ -174,75 +148,43 @@ src/
 
 | 경로 | 페이지 | 설명 |
 |:-----|:------|:-----|
-| `/` | 🏠 | 로그인/랜딩 페이지 |
-| `/friend` | 👥 | 친구 관리 |
-| `/profile` | 👤 | 마이페이지 |
-| `/alert` | 🔔 | 알림 |
-| `/study/:studyId` | 📚 | 스터디 홈 |
-| `/study/:studyId/event` | 📅 | 스터디 이벤트 |
-| `/study/:studyId/:channelId` | 📺 | 채널 (채팅/회의/코드/테스트) |
-| `/study/:studyId/:channelId/:testId` | 💻 | 코딩 테스트 |
-| `/study/:studyId/:channelId/:testId/:problemId` | ✍️ | 문제 풀이 |
-
----
-
-## 🔐 인증 시스템
-
-<table>
-<tr>
-<td width="33%" align="center">
-<h3>🎫 JWT</h3>
-Access Token 기반<br/>
-자동 토큰 리프레시
-</td>
-<td width="33%" align="center">
-<h3>🔄 자동 갱신</h3>
-401 에러 시<br/>
-자동 토큰 갱신
-</td>
-<td width="33%" align="center">
-<h3>💾 저장소</h3>
-SessionStorage<br/>
-보안 토큰 관리
-</td>
-</tr>
-</table>
+| `/` | 🏠 로그인 | 로그인/랜딩 페이지 |
+| `/friend` | 👥 친구 | 친구 관리 |
+| `/profile` | 👤 프로필 | 마이페이지 |
+| `/alert` | 🔔 알림 | 알림 목록 |
+| `/study/:studyId` | 📚 스터디 | 스터디 홈 |
+| `/study/:studyId/event` | 📅 이벤트 | 스터디 이벤트 |
+| `/study/:studyId/:channelId` | 📺 채널 | 채팅/회의/코드/테스트 |
+| `/study/:studyId/:channelId/:testId` | 💻 테스트 | 코딩 테스트 |
+| `/study/:studyId/:channelId/:testId/:problemId` | ✍️ 문제 | 문제 풀이 |
 
 ---
 
 ## ⚡ 실시간 기능
 
-<table>
-<tr>
-<td width="33%">
-
-### 📡 SSE
-**Server-Sent Events**
+### 📡 SSE (Server-Sent Events)
 - 실시간 알림 수신
 - 30초 하트비트
 - 자동 재연결
 
-</td>
-<td width="33%">
-
-### 🔌 WebSocket
-**STOMP Protocol**
+### 🔌 WebSocket (STOMP Protocol)
 - 실시간 채팅
 - 채널 메시지
 - 양방향 통신
 
-</td>
-<td width="33%">
-
-### 🎥 WebRTC
-**LiveKit**
+### 🎥 WebRTC (LiveKit)
 - 화상 회의
 - 화면 공유
 - P2P 연결
 
-</td>
-</tr>
-</table>
+---
+
+## 🔐 인증 시스템
+
+**JWT 기반 토큰 인증**
+- 🎫 Access Token 기반 인증
+- 🔄 401 에러 시 자동 토큰 갱신
+- 💾 SessionStorage 보안 토큰 관리
 
 ---
 
