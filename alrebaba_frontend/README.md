@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 AliBaba
+# 🚀 AlreBaba
 
 ### 알고리즘 리뷰 바로바로
 
